@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+}
+.container {
+    max-width: 960px;
+  }
+
+ 
+  .site-header {
+    background-color: black;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: orange;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+.background-image{
+    background-image: url('https://i.imgur.com/DQ6esDx.jpgg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    max-width: 2000px;
+} 
+
+.text-color{
+    color: white !important;
+    text-shadow: 0 0 10px;
+}
+.button-color{
+    background-color: orange !important;
+    color: black;
+}
+.button-color2{
+    background-color: rgb(12,106,218) !important;
+}
+.picture-style{
+    height: 120%;
+    width: 100%; 
+}
