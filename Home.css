@@ -46,9 +46,10 @@ body{
 .center{
   text-align: center;
 }
-.size{
-  width: 300px;
-  height: 300px;
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .size-2{
   max-width: 50%;
@@ -56,3 +57,34 @@ body{
 .background{
   background-color: black;
 }
+
+.tic-tac {
+  width:50%;
+  display:flex;
+  flex-wrap:wrap;
+   margin: auto;
+  padding: auto;
+  margin-bottom: 200px;
+
+}
+
+.tile {
+  width:30%;
+  padding:5%;
+  height: 200px;
+  color: white;
+}
+
+.right {
+  border-right: 1px solid orange;
+}
+
+.bottom {
+  border-bottom: 1px solid orange;
+}
+h1 {
+ color: red;
+  text-align: center;
+}
+
+
