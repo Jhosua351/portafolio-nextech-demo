@@ -1,6 +1,5 @@
 body{
-    background-color: black;
-}
+    background-color: black !important;
 }
 .container {
     max-width: 960px;
@@ -43,4 +42,17 @@ body{
 .picture-style{
     height: 120%;
     width: 100%; 
+}
+.center{
+  text-align: center;
+}
+.size{
+  width: 300px;
+  height: 300px;
+}
+.size-2{
+  max-width: 50%;
+}
+.background{
+  background-color: black;
 }
