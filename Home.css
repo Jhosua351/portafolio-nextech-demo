@@ -1,10 +1,12 @@
 body{
-    background-color: black !important;
+  background-color: black;
 }
+
+/*Navegation Bar*/
+
 .container {
     max-width: 960px;
   }
-
  
   .site-header {
     background-color: black;
@@ -19,13 +21,15 @@ body{
     color: #fff;
     text-decoration: none;
   }
-  
+
+/*End of Navegation Bar*/
+
 .background-image{
     background-image: url('https://i.imgur.com/DQ6esDx.jpgg');
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
-    max-width: 2000px;
+    max-width: 100%;
 } 
 
 .text-color{
@@ -39,12 +43,27 @@ body{
 .button-color2{
     background-color: rgb(12,106,218) !important;
 }
+
+.white-space{
+  display: none;
+  text-align: center;
+  
+}
+.placement{
+  display: flex;
+  border: 1px solid orange
+}
+
 .picture-style{
-    height: 120%;
+    height: 10%;
     width: 100%; 
+}
+.picture-style2{
+    height: 100px
 }
 .center{
   text-align: center;
+  color: black;
 }
 .center{
   display: block;
@@ -55,8 +74,13 @@ body{
   max-width: 50%;
 }
 .background{
-  background-color: black;
+  background-color: #0B5BCA;
 }
+.color-boxes{
+  background-color: white;
+}
+
+/*Tic-Tac-Toe*/
 
 .tic-tac {
   width:50%;
@@ -82,9 +106,81 @@ body{
 .bottom {
   border-bottom: 1px solid orange;
 }
-h1 {
+h3 {
  color: red;
   text-align: center;
 }
 
+/*End of the Tic-Tac-Toe*/
 
+/*Calculator*/
+
+.calculator {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  box-sizing: border-box;
+  background-position: center;
+}
+
+.title-2{
+  font-style: italic;
+  color: orange;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#calculator {
+  display: flex;
+  flex-wrap: wrap;
+  width: 255px;
+  align-items: center;
+  background: black;
+  margin-left: 40%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#calculator div {
+  width: 50px;
+  padding: 10px 5px;
+  border: 1px solid white;
+  margin: 1px;
+  text-align: center;
+  background: #0B5BCA;
+  color: white;
+}
+
+#calculator div#display {
+  width: 206px;
+  padding: 10px 5px;
+  font-size: 2em;
+  background: rgb(90, 90, 92);
+  text-align: center;
+}
+
+#calculator div#zero {
+  width: 102px;
+  padding: 10px 5px;
+}
+
+#calculator .operator,
+#calculator .solve {
+  background: orange;
+}
+
+#calculator .adjust {
+  background: rgb(107, 107, 109);
+}
+
+#calculator div:hover {
+  background: rgb(185, 185, 186);
+}
+
+#calculator div.adjust:hover {
+  background: rgb(133, 133, 135);
+}
+
+#calculator div.operator:hover {
+  background: rgb(203, 126, 5);
+}
