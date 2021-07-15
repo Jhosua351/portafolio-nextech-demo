@@ -113,37 +113,21 @@ function add(x, y) {
     return x + y;
 }
 
-// 🧮 Update the subtract function to return x-y
-// Subtraction should now work in the calculator
 function subtract(x, y) {
     console.log(`Subtracting ${x} - ${y}`);
     return x-y;
 }
 
-// 🧮 Create a function called multiply that returns
-// the result of 2 parameters multiplied
-// Multiply should now work in the calculator
 function multiply(x, y){
     console.log(`Multiplying ${x} * ${y}`);
     return x * y;
 }
 
-// 🧮 Create a function called divide that returns
-// the result of the first parameter divided by the second paramter
-// Divide should now work in the calculator
 function divide(x, y){
     console.log(`Dividing ${x} / ${y}`);
     return x / y;
 }
 
-// 🧮 Update the negateValue function to return the
-// negated value of the parameter 
-// Examples:
-//   -3 becomes 3
-//    1 becomes -1
-//  5.2 becomes -5.2
-// Call an existing function to get the result
-// The '+/-' button should now work in the calculator
 
 function negateValue(val){
     return val * -1;
@@ -152,14 +136,6 @@ function negateValue(val){
 
 }
 
-// 🧮 Update the convertValueToPercentage function to return the
-// value as a percentage
-// Examples:
-//   50 becomes 0.5
-//  100 becomes 1
-//  0.3 becomes 0.003
-// Call an existing function to get the result
-// The '%' button should now work in the calculator
 function convertValueToPercentage(val) {
     return val /100;
     console.log(`Converting ${val} to a percentage`);
@@ -193,27 +169,36 @@ function saveResult(result) {
     }
 }
 
+$(document).ready(function() {
 $("#clear").click(function() {
     clear();
 });
+});
 
+$(document).ready(function() {
 $("#negate").click(function() {
     var result = negateValue(parseFloat(displayValue));
     saveResult(result);
 });
+});
 
+$(document).ready(function() {
 $("#percent").click(function() {
     var result = convertValueToPercentage(parseFloat(displayValue));
     saveResult(result);
 });
+});
 
+$(document).ready(function() {
 $(".operator").click(function() {
     saveFirstValue();
     operation = $(this).attr('id');
     console.log(`Clicked ${operation}`);
     clearOnNextInput = true;
 });
+});
 
+$(document).ready(function() {
 $("#equals").click(function() {
     var result = null;
     if (operation === "add") {
@@ -228,7 +213,9 @@ $("#equals").click(function() {
     saveResult(result);
     clearOnNextInput = true;
 });
+});
 
+$(document).ready(function() {
 $(".input").click(function(event) {
     var newChar = $(this).html().trim();
     if ((displayValue === "0" && newChar !== ".") || clearOnNextInput) {
@@ -237,6 +224,7 @@ $(".input").click(function(event) {
     clearOnNextInput = false;
     displayValue = displayValue + newChar;
     updateDisplay();
+});
 });
 
 //End Of Calculator

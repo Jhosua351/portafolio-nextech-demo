@@ -1,26 +1,22 @@
-body{
-  background-color: black;
-}
-
 /*Navegation Bar*/
 
 .container {
     max-width: 960px;
   }
  
-  .site-header {
+.site-header {
     background-color: black;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
+}
+.site-header a {
     color: orange;
     transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
+}
+.site-header a:hover {
     color: #fff;
     text-decoration: none;
-  }
+}
 
 /*End of Navegation Bar*/
 
@@ -30,11 +26,16 @@ body{
     background-position: bottom center;
     background-size: cover;
     max-width: 100%;
+    max-height: 100%;
+    border-right: 1px solid orange;
+    border-bottom: 1px solid orange;
+    border-left: 1px solid orange;
 } 
 
 .text-color{
     color: white !important;
     text-shadow: 0 0 10px;
+    margin-bottom: 5%;
 }
 .button-color{
     background-color: orange !important;
@@ -51,15 +52,21 @@ body{
 }
 .placement{
   display: flex;
-  border: 1px solid orange
+  border: 1px solid orange;
+  margin-bottom: 5%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
 }
 
 .picture-style{
-    height: 10%;
-    width: 100%; 
+    height: 300px; 
+    border: 1px solid orange;
 }
 .picture-style2{
-    height: 100px
+    height: 100px;
 }
 .center{
   text-align: center;
@@ -74,11 +81,40 @@ body{
   max-width: 50%;
 }
 .background{
-  background-color: #0B5BCA;
+  background-color: #063679;
 }
 .color-boxes{
   background-color: white;
 }
+.me-pic{
+  display: block;
+  height: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid orange;
+}
+.info-me{
+  background-color: #c2e8ff;
+  padding: 10%;
+  border-radius: 50%;
+  border: 1px solid;
+  color: black;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.margin-1{
+  margin-bottom: 5%;
+}
+.margin-2{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.margin-3{
+  width: 45%;
+  margin-right: 5%;
+}
+
 
 /*Tic-Tac-Toe*/
 
@@ -86,9 +122,10 @@ body{
   width:50%;
   display:flex;
   flex-wrap:wrap;
-   margin: auto;
+  margin: auto;
   padding: auto;
   margin-bottom: 200px;
+  text-align: center;
 
 }
 
@@ -100,15 +137,33 @@ body{
 }
 
 .right {
-  border-right: 1px solid orange;
+  border-right: 1px solid black;
 }
 
 .bottom {
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid black;
 }
+
 h3 {
- color: red;
+ color: #063679;
   text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.subs{
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.sub-1{
+  padding-right: 25%;
+  margin-left: 2px;
+}
+
+.color{
+  background-color: #f99806;
+  margin-top: 5%;
 }
 
 /*End of the Tic-Tac-Toe*/
@@ -120,11 +175,12 @@ h3 {
   margin: 2em;
   box-sizing: border-box;
   background-position: center;
+  color: #063679;
 }
 
 .title-2{
   font-style: italic;
-  color: orange;
+  color: #063679;
   text-align: center;
   margin-top: 5%;
 }
@@ -132,27 +188,27 @@ h3 {
 #calculator {
   display: flex;
   flex-wrap: wrap;
-  width: 255px;
+  width: 440px;
   align-items: center;
-  background: black;
-  margin-left: 40%;
-  margin-right: 20%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-left: 38%;
+  margin-right: 40%;
+  margin-top: 2%;
+  margin-bottom: 10%;
 }
 
 #calculator div {
-  width: 50px;
+  width: 108px;
   padding: 10px 5px;
   border: 1px solid white;
   margin: 1px;
   text-align: center;
-  background: #0B5BCA;
+  background: #063679;
   color: white;
+  
 }
 
 #calculator div#display {
-  width: 206px;
+  width: 440px;
   padding: 10px 5px;
   font-size: 2em;
   background: rgb(90, 90, 92);
@@ -160,7 +216,7 @@ h3 {
 }
 
 #calculator div#zero {
-  width: 102px;
+  width: 218px;
   padding: 10px 5px;
 }
 
