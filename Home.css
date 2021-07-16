@@ -114,6 +114,33 @@
   width: 45%;
   margin-right: 5%;
 }
+.subs{
+  /*display: flex;*/
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.sub-1{
+  padding-right: 25%;
+  margin-left: 2px;
+}
+
+.flex-column1{
+  margin-left: -5%;
+
+}
+
+.flex-column2{
+  margin-left: 24%;
+    /* margin-right: -10%; */
+    margin-top: 2%;
+}
+
+.flex-column3{
+  margin-left: 44%; 
+    /* margin-bottom: 58%; */
+    /* padding-bottom: 18%; */
+}
 
 
 /*Tic-Tac-Toe*/
@@ -137,11 +164,11 @@
 }
 
 .right {
-  border-right: 1px solid black;
+  border-right: 2px solid black;
 }
 
 .bottom {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 h3 {
@@ -150,20 +177,16 @@ h3 {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-
-.subs{
-  display: flex;
-  margin-bottom: 5%;
-}
-
-.sub-1{
-  padding-right: 25%;
-  margin-left: 2px;
-}
-
 .color{
   background-color: #f99806;
-  margin-top: 5%;
+  height: 1000px;
+}
+
+.reset{
+  position: center;
+  color: black;
+  background-color: #f99806;
+  margin-left: 13px;
 }
 
 /*End of the Tic-Tac-Toe*/
@@ -239,4 +262,122 @@ h3 {
 
 #calculator div.operator:hover {
   background: rgb(203, 126, 5);
+}
+
+/*End of Calculator*/
+
+/*List*/
+
+.list {
+  font-family: helvetica;
+}
+
+span {
+  margin-left: 5px;
+}
+
+button {
+  background-color: #063679;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+h4 {
+  color: #063679;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+ol {
+  text-align: center;
+  list-style: inside;
+  margin-bottom: 20%;
+  font-size: 40px;
+  list-style-type: square;
+}
+.heading{
+  text-align: center;
+  margin-top: 5%;
+}
+
+/*End of list*/
+
+.contact-head{
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+}
+.form{
+  text-align: center;
+}
+.your-email{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 50px;
+  padding-left: 90px;
+  margin-left: 1px;
+}
+.your-message{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  padding-right: 200px;
+  padding-left: 50px;
+  max-height: 90px;
+  min-height: 90px;
+}
+.form-group{
+  display: flex;
+  flex-direction: row;
+}
+.decor-text-area{
+  display: flex;
+  justify-content: center;
+  background-color: #c2e8ff;
+  color: black;
+  margin-left: 10px;
+  max-height: 200px;
+  width: 500px;
+}
+.submit-button{
+  background-color: white;
+  color: black;
+  text-decoration: black;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.center-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+.submit-button:hover{
+  background-color: #063679;
+  color: #c2e8ff;
+  text-decoration: underline #c2e8ff;
+  border: 1px solid black;
+}
+
+.form > label {
+  float: left;
+  clear: right;
+}
+.form > input {
+  float: right;
+}
+
+.size-1{
+  width: 300px;
+}
+
+.style-1{
+  border: 1px solid black;
+  background-color: #c2e8ff;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }

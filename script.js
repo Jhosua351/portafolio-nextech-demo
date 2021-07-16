@@ -97,6 +97,12 @@ $("#button9").click(function() {
 });
 });
 
+$(document).ready(function() {
+$(".reset").click(function() {
+    location.reload();
+});
+});
+
 //End of Tic-Tac-Toe
 
 //Calculator
@@ -228,3 +234,19 @@ $(".input").click(function(event) {
 });
 
 //End Of Calculator
+
+//list
+
+var toDos = [];
+$(document).ready(function() {
+$(".addNew").click(function() {
+    var userInput = $(".newToDo").val();
+    toDos.push(userInput);
+
+   
+    $(".ToDoList").append("<li>" + userInput + "</li>");
+    $(".numTasks").text(toDos.length);
+    
+});
+});
+//End of List
