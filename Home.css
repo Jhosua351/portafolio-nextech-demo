@@ -303,10 +303,20 @@ ol {
 
 /*End of list*/
 
-.contact-head{
+.margin-4{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.margin-5{
   margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.contact-head{
   color: white;
   text-align: center;
+  margin-bottom: 2%;
 }
 .form{
   text-align: center;
@@ -334,7 +344,7 @@ ol {
 .decor-text-area{
   display: flex;
   justify-content: center;
-  background-color: #c2e8ff;
+  background-color: white;
   color: black;
   margin-left: 10px;
   max-height: 200px;
@@ -347,14 +357,10 @@ ol {
   margin-top: 20px;
   border-radius: 3px;
   border: 1px solid black;
+  width: 500px;
+  text-align: center;
 }
 
-.center-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-}
 .submit-button:hover{
   background-color: #063679;
   color: #c2e8ff;
@@ -380,4 +386,10 @@ ol {
   border-radius: 20px;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.button-center{
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
