@@ -18,6 +18,7 @@
     text-decoration: none;
 }
 .opacity {
+  font-family: 'Prompt', sans-serif;
   opacity: 0.7;
 }
 /*End of Navegation Bar*/
@@ -34,9 +35,18 @@
     border-left: 1px solid orange;
 } 
 
-.text-color{
+.font-style-1{
+    font-family: 'Ubuntu', sans-serif;
     color: white !important;
-    text-shadow: 0 0 10px;
+    font-size: 400%;
+    text-shadow: 0 0 60px;
+    margin-bottom: 5%;
+}
+.text-color{
+    font-family: 'Prompt', sans-serif;
+    font-size: 125%;
+    color: white !important;
+    text-shadow: 0 0 40px;
     margin-bottom: 5%;
 }
 .button-color{
@@ -58,6 +68,18 @@
   margin-bottom: 5%;
 }
 
+.white-space-2{
+  display: none;
+  text-align: center;
+}
+
+.placement-2{
+  display: flex;
+  border: 1px solid #063679;
+  margin-bottom: 5%;
+}
+
+  
 .images {
   display: flex;
   justify-content: center;
@@ -97,6 +119,8 @@
   border: 1px solid orange;
 }
 .info-me{
+  font-family: 'Prompt', sans-serif;
+  font-size: 125%;
   background-color: #c2e8ff;
   padding: 10%;
   border-radius: 50%;
@@ -117,9 +141,11 @@
   margin-right: 5%;
 }
 .subs{
+  font-family: 'Prompt', sans-serif;
+  font-size: 150%;
   /*display: flex;*/
-  margin-bottom: 5%;
-  margin-top: 2%;
+  margin-bottom: 10%;
+  margin-top: 3%;
 }
 
 .sub-1{
@@ -128,24 +154,41 @@
 }
 
 .flex-column1{
-  margin-left: -5%;
+  margin-left: -10%;
 
 }
 
 .flex-column2{
-  margin-left: 24%;
+  margin-left: 27%;
     /* margin-right: -10%; */
     margin-top: 2%;
 }
 
 .flex-column3{
-  margin-left: 44%; 
+  margin-left: 22%; 
     /* margin-bottom: 58%; */
     /* padding-bottom: 18%; */
 }
 
+.top-margin{
+  margin-top: 0%;
+}
 
 /*Tic-Tac-Toe*/
+
+.tic-tac-title{
+  font-family: 'Prompt', sans-serif;
+  font-size: 300%;
+  color: black;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.margin-7{
+  color: #063679;
+  margin-right: 15%;
+  margin-left: 15%;
+}
 
 .tic-tac {
   width:50%;
@@ -159,10 +202,12 @@
 }
 
 .tile {
-  width:30%;
+  font-family: 'Prompt', sans-serif;
+  width:33%;
   padding:5%;
   height: 200px;
-  color: white;
+  color: black;
+  font-size: 200%;
 }
 
 .right {
@@ -188,7 +233,17 @@ h3 {
   position: center;
   color: black;
   background-color: #f99806;
-  margin-left: 13px;
+}
+
+.wins{
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+  font-size: 150%;
+  color: black;
+  margin-top: 1%;
+  margin-bottom: -28%;
+  margin-left: 30%;
+  padding-top: 10%
 }
 
 /*End of the Tic-Tac-Toe*/
@@ -196,7 +251,6 @@ h3 {
 /*Calculator*/
 
 .calculator {
-  font-family: helvetica, arial, sans-serif;
   margin: 2em;
   box-sizing: border-box;
   background-position: center;
@@ -204,8 +258,9 @@ h3 {
 }
 
 .title-2{
-  font-style: italic;
-  color: #063679;
+  font-family: 'Prompt', sans-serif;
+  font-size: 300%;
+  color: black;
   text-align: center;
   margin-top: 5%;
 }
@@ -271,7 +326,8 @@ h3 {
 /*List*/
 
 .list {
-  font-family: helvetica;
+  font-family: 'Prompt', sans-serif;
+  font-size: 300%;
 }
 
 span {
@@ -303,6 +359,9 @@ ol {
   margin-top: 5%;
 }
 
+.newToDo{
+  color: #063679;
+}
 /*End of list*/
 
 .margin-4{
@@ -315,20 +374,27 @@ ol {
   margin-bottom: 2%;
 }
 
+.margin-8{
+  margin-bottom: 2%;
+}
 .contact-head{
+  font-family: 'Prompt', sans-serif;
   color: white;
   text-align: center;
 }
 .form{
+  font-family: 'Prompt', sans-serif;
   text-align: center;
 }
 .your-email{
+  font-family: 'Prompt', sans-serif;
   display: flex;
   justify-content: flex-start;
   padding-top: 50px;
-  padding-left: 5%;
+  padding-left: 7%;
 }
 .your-message{
+  font-family: 'Prompt', sans-serif;
   display: flex;
   justify-content: flex-end;
   padding-top: 50px;
@@ -351,6 +417,7 @@ ol {
   width: 500px;
 }
 .submit-button{
+  font-family: 'Prompt', sans-serif;
   background-color: white;
   color: black;
   text-decoration: black;
@@ -405,8 +472,8 @@ ol {
   margin-left: 5%;
 }
 
-.margin-6{
-  margin-top: 1%;
+.margin-9{
+  margin-top: -5%;
 }
 
 .foot-icons{
@@ -414,9 +481,15 @@ ol {
   justify-content: center;
   font-size: 75px;
   padding: 5%;
+  margin-top: -5%;
 }
 
 .style-2{
   padding: 5%;
   text-decoration: none;
+  color: orange;
+}
+
+.margin-6{
+  margin-top: 2%;
 }

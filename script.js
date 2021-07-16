@@ -27,7 +27,7 @@ function win(tileId1, tileId2, tileId3) {
         $(tileId1).html() === player &&
         $(tileId2).html() === player &&
         $(tileId3).html() === player) {
-        $("h3").text(player + " is the winner");
+        $(".wins").text(player + " is the winner");
         gameIsOver = true;
     }
 }
